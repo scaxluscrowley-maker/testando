@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monsters & Code</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="panel boot-splash">
+      <div class="boot-title">MONSTERS &amp; CODE</div>
+      <div class="boot-sub">Carregando...</div>
+      <div class="boot-hint">
+        Se a tela ficar somente no fundo, rode via servidor local (ex.: <b>python -m http.server 8000</b>) e abra por <b>http://localhost:8000</b>.
+      </div>
+      <div id="bootMsg" class="boot-msg"></div>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var msg = document.getElementById("bootMsg");
+    function show(text, color){
+      if(!msg) return;
+      msg.style.whiteSpace = "pre-wrap";
+      msg.style.marginTop = "10px";
+      msg.style.color = color || "rgba(255,255,255,.78)";
+      msg.textContent = text;
+    }
+
+    window.__MC_BOOTED = false;
+
+    window.addEventListener("error", function(ev){
+      var err = ev && (ev.error || ev.message);
+      if(!window.__MC_BOOTED){
+        show("Erro ao carregar o jogo:\n\n" + (err && (err.stack || err.message || String(err)) || String(ev.message || ev)), "#ff4d6d");
+      }
+    });
+
+    window.addEventListener("unhandledrejection", function(ev){
+      if(!window.__MC_BOOTED){
+        var reason = ev && ev.reason;
+        show("Falha ao carregar o jogo (promise):\n\n" + (reason && (reason.stack || reason.message || String(reason)) || String(reason)), "#ff4d6d");
+      }
+    });
+
+    setTimeout(function(){
+      if(!window.__MC_BOOTED){
+        show("Dica: isso geralmente é erro de carregamento do JS (MIME/404).\nAbra o console (F12) para ver a mensagem exata.");
+      }
+    }, 1400);
+  })();
+  </script>
+
+  <script type="module" src="./src/boot.js"></script>
+</body>
+</html>
