@@ -1,0 +1,41 @@
+[
+  {
+    "class_id": "MAGO",
+    "class_name": "Mago",
+    "hp_base": 95,
+    "mp_base": 100,
+    "atq_base": 8,
+    "def_base": 5,
+    "eva_pp": 2,
+    "crit_pp": 5,
+    "evolution_target": "Arcano",
+    "sprite_idle": null,
+    "notes": null
+  },
+  {
+    "class_id": "ESPADACHIM",
+    "class_name": "Espadachim",
+    "hp_base": 140,
+    "mp_base": 35,
+    "atq_base": 15,
+    "def_base": 11,
+    "eva_pp": 3,
+    "crit_pp": 5,
+    "evolution_target": "Mestre das Lâminas",
+    "sprite_idle": null,
+    "notes": null
+  },
+  {
+    "class_id": "GATUNO",
+    "class_name": "Gatuno",
+    "hp_base": 105,
+    "mp_base": 65,
+    "atq_base": 19,
+    "def_base": 6,
+    "eva_pp": 5,
+    "crit_pp": 8,
+    "evolution_target": "Algoz",
+    "sprite_idle": null,
+    "notes": null
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "classes": {
+    "Operador": "./assets/sprites/classes/operador.gif",
+    "Algoz": "./assets/sprites/classes/algoz.gif",
+    "Feiticeiro": "./assets/sprites/classes/feiticeiro.gif",
+    "Sentinela": "./assets/sprites/classes/sentinela.gif",
+    "Atirador": "./assets/sprites/classes/atirador.gif",
+    "Mago": "./assets/sprites/classes/mago.gif",
+    "Espadachim": "./assets/sprites/classes/espadachim.gif",
+    "Gatuno": "./assets/sprites/classes/gatuno.gif",
+    "Mestre das Lâminas": "./assets/sprites/classes/mestre_das_laminas.gif",
+    "Arcano": "./assets/sprites/classes/arcano.gif"
+  },
+  "bosses": {
+    "Yamach": {
+      "p1": "./assets/sprites/bosses/yamach_p1.gif",
+      "p2": "./assets/sprites/bosses/yamach_p2.gif"
+    },
+    "Infimius": {
+      "p1": "./assets/sprites/bosses/infimius_p1.gif",
+      "p2": "./assets/sprites/bosses/infimius_p2.gif"
+    },
+    "Valtherion": {
+      "p1": "./assets/sprites/bosses/valtherion_p1.gif",
+      "p2": "./assets/sprites/bosses/valtherion_p2.gif"
+    }
+  },
+  "icons": {
+    "skills": {},
+    "skillsByName": {},
+    "items": {},
+    "itemsByName": {}
+  }
+}

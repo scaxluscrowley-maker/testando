@@ -1,0 +1,35 @@
+[
+  {
+    "boss_id": "B01",
+    "boss_name": "Yamach",
+    "hp_base": 1100,
+    "atq_base": 24,
+    "def_base": 12,
+    "phase2_threshold_hp_pct": 0.7,
+    "sprite_phase1": null,
+    "sprite_phase2": null,
+    "notes": "2 fases; transformação limpa efeitos temporários do boss e consome turno."
+  },
+  {
+    "boss_id": "B02",
+    "boss_name": "Infimius",
+    "hp_base": 2100,
+    "atq_base": 38,
+    "def_base": 20,
+    "phase2_threshold_hp_pct": 0.7,
+    "sprite_phase1": null,
+    "sprite_phase2": null,
+    "notes": "2 fases; transformação limpa efeitos temporários do boss e consome turno."
+  },
+  {
+    "boss_id": "B03",
+    "boss_name": "Valtherion",
+    "hp_base": 3400,
+    "atq_base": 48,
+    "def_base": 34,
+    "phase2_threshold_hp_pct": 0.7,
+    "sprite_phase1": null,
+    "sprite_phase2": null,
+    "notes": "2 fases; transformação limpa efeitos temporários do boss e consome turno."
+  }
+]

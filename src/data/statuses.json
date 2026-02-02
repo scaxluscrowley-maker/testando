@@ -1,0 +1,46 @@
+[
+  {
+    "status_id": "POISON",
+    "name": "Veneno",
+    "type": "dot",
+    "duration_turns": 4,
+    "stack_rule": "no_stack_no_refresh_until_end",
+    "tick_timing": "start_of_target_turn",
+    "can_crit": 0,
+    "apply_requires_damage_gt0": 1,
+    "notes": "Dano por turno; não crita."
+  },
+  {
+    "status_id": "BURN",
+    "name": "Queimadura",
+    "type": "dot",
+    "duration_turns": 3,
+    "stack_rule": "no_stack_no_refresh_until_end",
+    "tick_timing": "start_of_target_turn",
+    "can_crit": 0,
+    "apply_requires_damage_gt0": 1,
+    "notes": "Dano por turno; não crita."
+  },
+  {
+    "status_id": "BLEED",
+    "name": "Sangramento",
+    "type": "dot",
+    "duration_turns": 3,
+    "stack_rule": "no_stack_no_refresh_until_end",
+    "tick_timing": "start_of_target_turn",
+    "can_crit": 0,
+    "apply_requires_damage_gt0": 1,
+    "notes": "Dano por turno; não crita."
+  },
+  {
+    "status_id": "SILENCE",
+    "name": "Silêncio",
+    "type": "debuff",
+    "duration_turns": 1,
+    "stack_rule": "no_stack_no_refresh_until_end",
+    "tick_timing": "next_player_turn",
+    "can_crit": 0,
+    "apply_requires_damage_gt0": 0,
+    "notes": "Impede usar habilidades no próximo turno."
+  }
+]
